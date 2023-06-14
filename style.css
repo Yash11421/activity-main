@@ -1,0 +1,125 @@
+body {
+  font-family: 'Alegreya Sans SC', serif;
+  background-color: #d6d0d0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edit , .delete{
+  padding:10px;
+  font-size: .8rem;
+}
+
+.table-container {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+
+
+.table {
+  width: fit-content;
+  border: 2px solid black;
+
+}
+.edit{
+  background-color: #ccc;
+
+}
+
+.delete{
+  background-color: red;
+  color: white;
+}
+
+.table th {
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 3px solid black;
+  padding: 9px;
+}
+
+th{
+  background-color: blue;
+  color: white;
+  font-size: 1.2rem;
+}
+
+td{
+  border: 2px solid black;
+  text-align: left;
+  padding: 8px 15px;
+}
+
+label {
+  display: block;
+  margin-top : 22px;
+  font-weight: bold;
+}
+
+.spacing{
+  margin-bottom: 0;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+select {
+  height: 34px;
+}
+
+.submit{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3px;
+}
+
+#edit{
+  display: none;
+}
+
+input[type="submit"],input[type="reset"] {
+  width: 20%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.errorMessage {
+  display: block;
+  color: #ff0000;
+  margin-top: 0;
+  margin-bottom: 4px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+  <title>Employee Form</title>
+</head>
+<body>
+  <h1>Employee Form</h1>
+  <form>
+    <label for="employeeID" style="margin-top : 0px;">Employee ID:</label>
+    <input type="text" id="employeeID" name="employeeID" class="spacing" required><br>
+    <span class="errorMessage" id="complex"></span> 
+    
+    <label for="employeeName">Employee Name:</label>
+    <input type="text" id="employeeName" name="employeeName" class="spacing" required><br>
+    <span class="errorMessage"></span>
+    
+    <label for="employeeAge">Employee Age:</label>
+    <input type="text" id="employeeAge" name="employeeAge" class="spacing" required><br>
+    <span class="errorMessage"></span>
+    
+    <label for="employeeGender">Employee Gender:</label>
+    <select id="employeeGender" name="employeeGender" class="spacing" required>
+      <option value="">Select</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br>
+    <span class="errorMessage"></span>
+    
+    <div class="submit">
+     <input type="reset" id="add1" value="RESET">
+     <input type="submit" id="add" value="ADD">
+     <input type="submit" id="edit" value="EDIT">
+    </div>
+    
+    <!-- <div class="submit1">
+       <input type="submit" id="add1" value="RESET">
+    </div>  -->
+
+  </form>
+
+
+<div class="table-container">
+  <h2>Registered Employees</h2>
+  <td>
+    <table id="employeeTable">
+      <thead>
+        <tr>
+          <th>employeeID</th>
+          <th>employeeName</th>
+          <th>employeeAge</th>
+          <th>employeeGender</th>
+          <th>Action</th>
+        </tr> 
+      </thead>
+
+      <tbody> 
+
+      </tbody>
+
+    </table>
+  </td>  
+</div>
+
+  <script src="index.js"></script>
+  
+</body>
+</html>
